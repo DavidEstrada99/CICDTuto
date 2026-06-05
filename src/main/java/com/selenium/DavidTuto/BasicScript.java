@@ -20,7 +20,7 @@ public class BasicScript {
         System.out.println(title);
         WebElement textBox = driver.findElement(By.name("my-text"));
         WebElement submitButton = driver.findElement(By.cssSelector("button"));
-        textBox.sendKeys("Selenium2");
+        textBox.sendKeys("Selenium");
         submitButton.click();
         WebElement message = driver.findElement(By.id("message"));
         String messageText = message.getText();
